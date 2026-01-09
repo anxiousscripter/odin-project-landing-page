@@ -1,0 +1,237 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  /* FONTS */
+  --font-primary: "Roboto", sans-serif;
+
+  /* PAGE COLORS */
+  --bg-primary-dark: #1f2937;
+  --bg-quote: #e5e7eb;
+
+  /* TEXT COLORS */
+  --txt-primary-color: #f9faf8;
+  --txt-secondary-color: #e5e7eb;
+  --txt-quote-color: #1f2937;
+
+  /* BUTTON COLORS */
+  --btn-primary-color: #3882f6;
+
+  /* NOTIFICATIONS */
+  --information-color: #1f2937;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  max-width: 75%;
+  margin: 0 auto;
+}
+
+.flex-container {
+  display: flex;
+}
+
+body {
+  font-family: var(--font-primary);
+  display: flex;
+  flex-direction: column;
+}
+
+section {
+  padding: 70px 0;
+}
+
+button {
+  padding: 0.5rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* HEADER STYLING */
+header {
+  background: var(--bg-primary-dark);
+  color: var(--txt-primary-color);
+  padding: 1rem 0;
+}
+
+.navbar {
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.logo {
+  color: var(--txt-primary-color);
+  font-size: 24px;
+  font-weight: 900;
+  flex-shrink: 0;
+}
+
+header ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 1.5rem;
+}
+
+header a {
+  text-decoration: none;
+  color: var(--txt-secondary-color);
+  font-size: 18px;
+}
+
+/* MAIN BODY STYLING */
+.hero-section {
+  background: var(--bg-primary-dark);
+  color: var(--txt-primary-color);
+  min-height: 60vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-section .wrapper {
+  width: 100%;
+  gap: 3rem;
+}
+
+.hero-section .left,
+.hero-section .right {
+  flex: 1;
+}
+
+.hero-section h1 {
+  font-size: 48px;
+  font-weight: 900;
+  width: 500px;
+  margin-bottom: 0.5rem;
+}
+
+.hero-section .subtext {
+  color: var(--txt-secondary-color);
+  font-size: 18px;
+  margin-bottom: 0.5rem;
+}
+
+.hero-section button {
+  background-color: var(--btn-primary-color);
+  color: var(--txt-primary-color);
+  font-size: 18px;
+  font-weight: bold;
+  padding: 0.5rem 1.8rem;
+  margin-top: 0.8rem;
+}
+
+.hero-section .right {
+  background-color: rgb(95, 103, 110);
+  justify-content: center;
+  align-items: center;
+}
+
+/* INFO SECTION STYLING */
+.info-section .wrapper {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.info-section h2 {
+  font-size: 36px;
+  color: #1f2937;
+  font-weight: 900;
+  margin-bottom: 1.3rem;
+}
+
+.info-box-row {
+  gap: 1.2rem;
+}
+
+.info-box {
+  max-width: 200px;
+  text-align: center;
+}
+
+figure {
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.info-box .image-box {
+  border: 6px solid var(--btn-primary-color);
+  border-radius: 18px;
+  width: 150px;
+  height: 150px;
+  margin-bottom: 1rem;
+}
+
+/* QUOTE SECTION STYLING */
+.quote-section {
+  background-color: var(--bg-quote);
+  padding: 80px 0;
+}
+
+.quote-section .quote {
+  color: var(--txt-quote-color);
+  font-size: 36px;
+  font-weight: 300;
+  font-style: italic;
+  margin-bottom: 0.5rem;
+}
+
+.quote-section .author {
+  font-size: 22px;
+  text-align: right;
+  font-weight: 700;
+}
+
+/* CTA SECTION STYLING */
+.cta-section {
+  padding: 80x 0;
+}
+
+.cta-section .wrapper {
+  background-color: var(--btn-primary-color);
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  padding: 1.5rem 2rem;
+  border-radius: 6px;
+}
+
+.cta-section .left {
+  flex: 3;
+}
+
+.cta-section .right {
+  flex: 1;
+}
+
+.cta-section h2 {
+  color: var(--txt-primary-color);
+  margin-bottom: 0.5rem;
+}
+
+.cta-section p {
+  color: var(--txt-secondary-color);
+}
+
+.cta-section button {
+  background-color: var(--btn-primary-color);
+  border: 2px solid var(--txt-primary-color);
+  color: var(--txt-primary-color);
+  padding: 0.7rem 1.8rem;
+}
+
+/* FOOTER STYLING */
+footer {
+  background-color: var(--bg-primary-dark);
+  color: var(--txt-secondary-color);
+  min-height: 10vh;
+  align-items: center;
+}
